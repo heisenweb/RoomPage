@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+html,
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: Spartan;
+}
+.row-1 > div {
+  height: 430px;
+}
+.nav-box {
+  height: 100%;
+  background-image: url("../img/desktop-image-hero-1.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.nav {
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
+}
+.nav img {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.nav span {
+  margin: 0 5px;
+}
+.nav a {
+  font-size: 11px;
+  color: hsl(0, 0%, 100%);
+}
+.nav-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+  padding: 25px 0;
+}
+.nav-mobile img {
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+}
+.box-info {
+  text-align: left;
+  padding: 0 25px;
+  width: 85%;
+}
+.box-info > p {
+  margin: 25px 0;
+  color: hsl(0, 0%, 63%);
+  font-size: 12px;
+  line-height: 18px;
+}
+.box-info h2 {
+  color: black;
+  font-weight: 800;
+  font-size: 28px;
+}
+.detail {
+  cursor: pointer;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.detail span {
+  letter-spacing: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.detail:hover span,
+.detail:hover path {
+  color: hsl(0, 0%, 63%);
+  fill: hsl(0, 0%, 63%);
+}
+.detail svg {
+  margin-left: 15px;
+}
+.detail path {
+  transition: all 0.3s;
+}
+.buttons {
+  width: 150px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+}
+.buttons > div {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: hsl(0, 0%, 0%);
+}
+.buttons > div:hover {
+  background: hsl(0, 0%, 27%);
+}
+.navs .buttons {
+  display: none;
+}
+.row-2 > div {
+  height: 195px;
+}
+.tables {
+  height: 100%;
+  background-image: url("../img/image-about-dark.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.chair {
+  height: 100%;
+  background-image: url("../img/image-about-light.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  height: auto !important;
+  padding: 30px 0 0;
+}
+.about .box-info {
+  text-align: left;
+  padding: 0 25px;
+  width: 100%;
+}
+.about .box-info > p {
+  margin: 0;
+  color: hsl(0, 0%, 63%);
+  font-size: 12px;
+  line-height: 20px;
+}
+.about .box-info h2 {
+  color: black;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin: 15px 0;
+}
+.mobile-open {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.mobile-links {
+  background: #fff;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s;
+  left: -100%;
+}
+.mobile-links span {
+  margin: 0 15px;
+}
+.mobile-links img {
+  margin-right: 25px;
+  width: 20px;
+  cursor: pointer;
+}
+.mobile-links a {
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+  font-size: 14px;
+}
+@media only screen and (max-width: 500px) {
+  .nav-box {
+    background-image: url("../img/mobile-image-hero-1.jpg");
+  }
+  .nav,
+  .info .buttons {
+    display: none;
+  }
+  .nav-mobile {
+    display: flex;
+  }
+  .row-1 .box-info h2 {
+    font-size: 22px;
+  }
+  .navs .buttons {
+    display: flex;
+    right: 0;
+    left: initial;
+  }
+  .info {
+    height: auto;
+    padding: 35px 0 !important;
+  }
+  .detail {
+    margin-bottom: 0;
+  }
+  .about {
+    padding: 30px 0;
+  }
+}
